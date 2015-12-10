@@ -12,8 +12,8 @@ Package.onUse(function(api) {
   api.use([
     'ecmascript',
     'templating',
-    'aldeed:autoform',
-    'fourseven:scss'
+    'aldeed:autoform@5.8.0',
+    'fourseven:scss@3.4.1'
   ]);
 
   api.addFiles('lib/client/autoform-image-gallery.html', 'client');
