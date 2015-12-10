@@ -1,11 +1,6 @@
 <template name="afImageGallery">
   <div class="af-image-gallery-input">
 
-    <!-- Controls -->
-    <div class="controls">
-      <input class="search-filter" placeholder="Find image..." />
-    </div>
-
     <!-- Image collection -->
     <div class="images">
       {{#each images}}
@@ -20,6 +15,6 @@
 
 <template name="afImageGalleryImage">
   <div class="image {{isSelected}}">
-    <img src="{{ imageUrl }}" />
+    <img src="{{url}}" />
   </div>
 </template>
