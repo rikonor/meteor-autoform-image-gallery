@@ -9,7 +9,13 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
 
-  api.use('ecmascript');
+  api.use([
+    'ecmascript',
+    'aldeed:autoform',
+    'fourseven:scss'
+  ]);
 
-  api.addFiles('autoform-image-select.js');
+  api.addFiles('lib/client/autoform-image-select.html', 'client');
+  api.addFiles('lib/client/autoform-image-select.js', 'client');
+  api.addFiles('lib/client/autoform-image-select.scss', 'client');
 });

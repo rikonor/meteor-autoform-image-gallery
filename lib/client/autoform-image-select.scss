@@ -1,0 +1,41 @@
+$thumbnailImageWidth: 120px;
+
+.af-image-gallery-input {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+
+  .controls {
+    .search-filter {
+      width: 100%;
+
+      outline: none;
+      border: none;
+    }
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+
+    .image {
+      width: $thumbnailImageWidth;
+      margin: 5px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: 3px solid transparent;
+      &.selected { border: 3px solid #3C8DBC !important; }
+      &:hover { border: 3px solid #CCC; }
+
+      img {
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
