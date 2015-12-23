@@ -1,3 +1,9 @@
+/*
+  Package shouldn't depend on a sass compiler.
+  This file is kept for reference
+  To generate a css file, I basically run this through Sassmeister and autoprefixer
+*/
+
 $thumbnailImageWidth: 120px;
 
 .af-image-gallery-input {
